@@ -4,7 +4,7 @@ pipeline {
 	stages {
 		stage('Clone Git Repo'){
 				steps{
-					git 'https://github.com/raykert/cypress-jenkins-demo-master.git'
+					git clone'https://github.com/raykert/cypress-jenkins-demo-master.git'
 		    }
 		}
 		stage('Install Dependencies'){
